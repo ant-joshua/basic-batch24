@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ini Website Pertama Saya</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #coba-responsive {
+            width: 100%;
+            height: 100%;
+            background-color: #ccc;
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* Media Query for Mobile */
+        @media screen and (max-width: 600px) {
+            #coba-responsive {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        /* Media Query for Desktop  */
+        @media screen and (min-width: 600px) {
+            #coba-responsive {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://images.pexels.com/photos/12466763/pexels-photo-12466763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        target="_blank">
+        <img src="https://images.pexels.com/photos/12466763/pexels-photo-12466763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            style="object-fit: cover;width:100%;" />
+    </a>
+    <hr />
+
+    <h1>Ini h1 <span>ini inline element</span>
+        <div>ini block element</div>
+    </h1>
+    <h2>Ini h2</h2>
+    <h3>Ini h3</h3>
+    <h4>Ini h4</h4>
+    <h5>Ini h5</h5>
+    <h6>Ini h6</h6>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem,
+        quisquam quisquam.
+    </p>
+    <p>
+        Lorem ipsum <strong>dolor</strong> sit <i>amet</i> consectetur adipisicing
+        elit. <u>Quisquam</u> quidem, quisquam quisquam.
+    </p>
+
+    <hr />
+    <h1>List</h1>
+
+    <h2>Ordered List</h2>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+
+    <h2>Unordered List</h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <hr />
+    <div>
+        <h2>asdasd</h2>
+        <p>asdasd
+        <div>asdasda</div>
+        </p>
+    </div>
+
+    <hr />
+    <section>
+        <h1>Form</h1>
+        <form method="get">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Nama" />
+            </div>
+            <br />
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email" />
+            </div>
+            <br />
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password" />
+            </div>
+            <br />
+            <div>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" placeholder="Umur" />
+            </div>
+            <div>
+                <label for="address">Address</label>
+                <textarea name="address" id="address" cols="30" rows="10" placeholder="Alamat"></textarea>
+            </div>
+            <br />
+            <div>
+                <label>Gender</label>
+                <div>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="Male">
+                </div>
+                <div>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="Female">
+                </div>
+            </div>
+            <br />
+            <div>
+                <label>Kota</label>
+                <select name="city" id="city">
+                    <option value="jakarta">Jakarta</option>
+                    <option value="tangerang">Tangerang</option>
+                </select>
+            </div>
+            <br />
+            <div>
+                <label>Apakah anda sudah menikah ?</label>
+                <input type="checkbox" name="married" id="married" value="Yes">
+            </div>
+            <br />
+            <div>
+                <label>Tanggal Lahir</label>
+                <input type="date" name="birthdate" id="birthdate">
+            </div>
+            <br />
+            <div>
+                <label>Upload Foto</label>
+                <input type="file" name="photo" id="photo">
+            </div>
+            <br />
+            <div>
+                <label>Warna Favorit</label>
+                <input type="color" name="color" id="color">
+            </div>
+            <br />
+            <div>
+                <label>Waktu</label>
+                <input type="time" name="time" id="time">
+            </div>
+            <br />
+            <div>
+                <label>Phone</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <input type="submit" />
+        </form>
+    </section>
+    <hr />
+    <section>
+        <h1>Table</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Email</th>
+                    <th>Umur</th>
+                    <th>Alamat</th>
+                </tr>
+                <!-- Tr with rowspan -->
+                <tr>
+                    <th colspan="2">asdas</th>
+                    <th>asdas</th>
+                    <th>asdas</th>
+                    <th>asdas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">1</td>
+                    <td>John Doe</td>
+                    <td>john.doe@gmail.com</td>
+                    <td>20</td>
+                    <td>Jl. Kebon Jeruk</td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>john.doe@gmail.com</td>
+                    <td>20</td>
+                    <td>Jl. Kebon Jeruk</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Email</th>
+                    <th>Umur</th>
+                    <th>Alamat</th>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    <hr />
+    <section>
+        <h1>Flex</h1>
+        <div style="display: flex;flex-direction:row;background-color:orange;">
+            <div style="background-color: yellow; flex: 2;">1</div>
+            <div style="background-color: red;flex:1">2</div>
+        </div>
+        <br />
+        <h2>Space Between</h2>
+        <div style="display: flex;flex-direction:row;background-color:orange; justify-content: space-between;">
+            <div style="background-color: yellow;">1</div>
+            <div style="background-color: red;">2</div>
+            <div style="background-color: blue;">3</div>
+            <div style="background-color: gray;">4</div>
+        </div>
+        <h2>Space Around</h2>
+        <div style="display: flex;flex-direction:row;background-color:orange; justify-content: space-around;">
+            <div style="background-color: yellow;">1</div>
+            <div style="background-color: red;">2</div>
+            <div style="background-color: blue;">3</div>
+            <div style="background-color: gray;">4</div>
+        </div>
+        <h2>Space Evenly</h2>
+        <div style="display: flex;flex-direction:row;background-color:orange; justify-content: space-evenly;">
+            <div style="background-color: yellow;">1</div>
+            <div style="background-color: red;">2</div>
+            <div style="background-color: blue;">3</div>
+            <div style="background-color: gray;">4</div>
+        </div>
+        <h2>Coba Responsive</h2>
+        <div id="coba-responsive">
+            <div style="background-color: yellow;">1</div>
+            <div style="background-color: red;">2</div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
