@@ -1,0 +1,9 @@
+.section-header {
+    background-color: black;
+    font-weight: bold;
+    font-size: x-large;
+    color: white;
+    padding: 15px 10px;
+    /* Margin 5px 5px 5px 5px */
+    margin: 5px 0px;
+}
